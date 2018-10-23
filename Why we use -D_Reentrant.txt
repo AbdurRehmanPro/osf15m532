@@ -1,0 +1,7 @@
+Actually, the recommended way to compile with threads in GCC is using the -pthread option. It is equivalent to -lpthread -D_REENTRANT so you have actually no problem.
+
+The flags do the following:
+
+-lpthread instructs the linker to use the appropriate library versions for thread compatibility.
+
+-D_REENTRANT tells the compiler to use the declarations necessary for thread usage.
